@@ -1,0 +1,325 @@
+#GenerateProduct{
+  width: 400px;
+  height:650px;
+  margin: auto;
+  left: 30%;
+  border: 2px solid;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  gap:30px;
+  position: fixed;
+  background-color: #7dd6ff;
+  z-index: 1000;
+}
+
+
+#OrderedNumber{
+  background-color: rgb(222, 225, 222);
+  border-radius: 50%;
+  width:16px;
+  line-height: 16px;
+  padding: 2px;
+  color: black;
+  position: relative;
+  left: -2px;
+  top:-10px;
+}
+
+
+
+#cancelX{
+  position: absolute;
+  top: -30px;
+  left: 95%;
+  font-weight: 700;
+  font-size:32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+#GenerateProduct>div>input{
+  width:70% ;
+  border-radius: 5px;
+  border: 0px;
+  height: 1.5rem;
+  background-color: #fefeff;
+}
+
+.Submit{
+  width: 100px;
+  left:25%;
+  position: relative;
+}
+
+.submitbtn{
+  width: 120px;
+  border-radius: 5px;
+  height: 32px;
+  border: none;
+}
+
+
+
+#NavigationBar{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+}
+
+
+#LogoImg{
+    height: 40px;
+}
+
+
+#NavigationSearchBar{
+    width: 50%;
+    margin: 0px 20px;
+    background-color: #f0f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 5px 2px;
+    height: 40px;
+}
+
+
+#NavBarSearchButton{
+background-color: #f0f5ff;
+border: 0px;
+}
+
+#UserSearchValue{
+    width: 100%;
+    background: none;
+    border:0px;
+    height: 100%;
+}
+
+.Login {
+    background:none;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .LoginZone {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .Login-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffbfb;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .Login-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .Login-dropdown-content a:hover {background-color: #ddd;}
+  
+  .LoginZone:hover .Login-dropdown-content{display: block;}
+  
+  .LoginZone:hover .Login {background-color: #2a55e5; color:white}
+
+
+  #CartImage{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+    align-items: center;
+  }
+
+
+
+  .Options {
+    background:none;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    border-radius: 3px;
+  }
+
+
+  .OptionsZone {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .Options-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #fffbfb;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  .Options-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .Options-dropdown-content a:hover {background-color: #ddd;}
+  
+  .OptionsZone:hover .Options-dropdown-content{display: block;}
+  
+  .OptionsZone:hover .Options {background-color: #b2b6c5af; color:white}
+  
+
+  #CategorySectionContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    background-color: rgb(174, 172, 172);
+    margin: auto;
+  }
+
+
+  #DisplaySection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap:20px;
+    background-color: #FFD77D;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+  .product{
+    padding: 2px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    margin-top: 10px;
+    border: 2px solid;
+    gap: 0;
+    
+  }
+
+  .product-img-cont{
+    width:150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+    object-fit: cover;
+  }
+
+  .product-img{
+    width:150px;
+    height:150px;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .title{
+    height: 60px;
+    
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .productID, .price, .description, .rating, .count {
+    margin:2px;
+  }
+  
+
+  #ItemAddtoCartForm{
+    width:400px;
+    height: 600px;
+    background-color: rgb(159, 226, 159);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:10px;
+    display: none;
+    position: fixed;
+    left:30%
+  }
+
+  .ItemAddtoCartForm-Image{
+    width:50%;
+    height:50%;
+    border: 2px solid;
+   
+  }
+
+  #cancelX1{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top:2px;
+    left: 95%;
+    text-align: center;
+  }
+
+  .reqItems{
+    width: 50%;
+  }
+
+
+  #CartViewBoard{
+    position: fixed;
+    left: 25%;
+    background-color: rgb(240, 255, 155);
+    width: 500px;
+    height: 500px;
+    z-index: 998;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+  }
+

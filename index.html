@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="" id="CartViewBoard">
+        <button id="closeCartView" onclick="event.preventDefault(); closeCart()">X</button>
+        <h3 style="text-align: center;">Ordered Items</h3>
+        <div id="CartItems">
+
+        </div>
+
+    </div>
+
+
+
+
+    <form id="GenerateProduct" onsubmit="event.preventDefault(); generateNewProduct()" class="">
+        <p id="cancelX" onclick="popupFunc()">X</p>
+        <div><label>Product ID: </label><br>
+            <input type="number" placeholder="Enter the Product ID" name="ProductID" id="ProductID"><br> </div>
+            <div> <label>Name of the Product</label><br>
+        <input type="text" placeholder="Enter the name of the product" name="ProductName" id="ProductName"><br></div>
+        <div>
+            <label>Price</label><br>
+            <input type="number" placeholder="Enter the Price of the Product" name="ProductPrice" id="ProductPrice"><br>
+        </div>
+        <div>
+            <label>Category</label><br>
+            <select id="ProductCategory">
+                <option value disabled selected>Select Category</option>
+                <option>Electronics</option>
+                <option>Jewelery</option>
+                <option>Men's clothing</option>
+                <option>Women's clothing</option>
+            </select><br>
+        </div>
+       <div>
+        <label>Description</label><br>
+        <input type="text" placeholder="Give some details of the product" name="ProductDesc" id="ProductDesc"><br>
+       </div>
+       <div>
+        <label>No. of Stocks Available</label><br>
+            <input type="number" placeholder="Enter No. of Stocks Available" id="ProductStock">
+       </div>
+        <div>
+            <label>Click to add Image URL</label><br>
+            <input type="url" placeholder="Paste Image URL Here" id="ImageURL">
+        </div>
+       <button type="submit" class="Submit"> Submit </button>
+        
+
+        
+
+    </form>
+    <form id="ItemAddtoCartForm" onsubmit="event.preventDefault(); AddtoCartf()" class="">
+        <button id="cancelX1" onclick="cancelXf(); event.preventDefault()">X</button>
+        <img src="" alt="" class="ItemAddtoCartForm-Image" id="ItemAddtoCartForm-Image">
+        <p id="titleoftheCartProduct"></p>
+        <p>Price of the Single Product : <span id="priceoftheAddedItem"> </span></p>
+        <label>Required No. of Items : </label>
+        <input type="number" placeholder="Enter No. of required items" id="reqItemsNos"class="reqItems" required>
+        <Button onclick="event.preventDefault(); CalculatePrice();" class="submitbtn">Calculate Price</Button>
+        <p id="estimatedPrice"></p>
+        <button type="submit" class="submitbtn">Add to Cart</button>
+    </form>
+
+
+    <nav id="NavigationBar">
+        <img src="assets/logo.png" alt="" id="LogoImg">
+        <form id="NavigationSearchBar" onsubmit="searchUseerItem()">
+            <button id="NavBarSearchButton" type="submit">
+                <img src="assets/Searchicon.svg" alt="">
+            </button>
+            <input type="text" id="UserSearchValue" placeholder="Search for Products, Brands and More">
+        </form>
+        <div class="LoginZone">
+            <button class="Login"><img src="assets/profile-52e0dc.svg" alt="">Login</button>
+            <div class="Login-dropdown-content">
+                <a href="#">New Customer &ensp; Signup</a>
+                <a href="#">My Profile</a>
+                <a href="#">Orders</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Rewards</a>
+                <a href="#">Gift Cards</a>
+            </div>
+        </div>
+        
+        <div>
+            <button id="CartImage" onclick="event.preventDefault(); viewCart()"><img src="assets/header_cart-eed150.svg" alt=""  >Cart<p id="OrderedNumber">0</p></button>
+        </div>
+        <button id="CreateProduct" onclick="popupFunc()">Add New Product</button>
+        <div class="OptionsZone">
+            <button class="Options"><img src="assets/Vertical Dots.svg"></button>
+            <div class="Options-dropdown-content">
+                <a href="#">Notification Preferences</a>
+                <a href="#">24 X 7 Customer Care</a>
+                <a href="#">Download App</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="CategorySectionContainer">
+        <p class="All" id="all" onclick="filteredDisplay('all')">Home</p>
+    </div>
+
+    <div id="DisplaySection">
+
+    </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
